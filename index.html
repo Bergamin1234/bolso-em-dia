@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Planilha de Gastos Online Grátis + Simulador de Investimentos | Regra 50 30 20</title>
+  <meta name="description" content="Planilha de gastos online e gratuita para controle financeiro pessoal. Organize o orçamento com a regra 50 30 20, calcule sua reserva de emergência e compare Poupança x CDB x Tesouro Selic no simulador de investimentos. Sem cadastro.">
+  <meta name="keywords" content="planilha de gastos online, controle financeiro pessoal, simulador de investimentos, como guardar dinheiro e investir, regra 50 30 20, reserva de emergência, planilha financeira grátis, orçamento pessoal, poupança x cdb x tesouro selic, renda fixa para iniciantes">
+  <meta name="author" content="Bolso em Dia">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta name="theme-color" content="#0b1f3a">
+  <meta name="format-detection" content="telephone=no">
+  <!-- TROQUE "www.seudominio.com.br" pelo seu domínio real antes de publicar -->
+  <link rel="canonical" href="https://www.seudominio.com.br/">
+
+  <!-- Open Graph / redes sociais (Instagram, TikTok, WhatsApp) -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Bolso em Dia">
+  <meta property="og:title" content="Planilha de Gastos Online + Simulador de Investimentos (grátis)">
+  <meta property="og:description" content="Descubra para onde vai o seu dinheiro, aplique a regra 50/30/20, monte sua reserva de emergência e simule quanto seu dinheiro rende. Sem cadastro.">
+  <meta property="og:url" content="https://www.seudominio.com.br/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Planilha de Gastos Online + Simulador de Investimentos">
+  <meta name="twitter:description" content="Controle financeiro pessoal grátis: regra 50/30/20, reserva de emergência e Poupança x CDB x Tesouro Selic.">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google AdSense: descomente e troque pelo seu ID de editor (ca-pub-...) após a aprovação -->
+  <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0000000000000000" crossorigin="anonymous"></script> -->
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Bolso em Dia — Planilha de Gastos Online e Simulador de Investimentos",
+    "url": "https://www.seudominio.com.br/",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "Any",
+    "inLanguage": "pt-BR",
+    "description": "Planilha de gastos online gratuita para controle financeiro pessoal com diagnóstico da regra 50/30/20, calculadora de reserva de emergência e simulador Poupança x CDB x Tesouro Selic.",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "BRL" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "A planilha de gastos online é gratuita e precisa de cadastro?",
+        "acceptedAnswer": { "@type": "Answer", "text": "É 100% gratuita e não exige cadastro, e-mail ou login. Basta abrir a página e começar a preencher." } },
+      { "@type": "Question", "name": "Onde ficam salvos os meus dados financeiros?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Somente no seu navegador, por meio do localStorage. Nenhum valor é enviado para servidores. Se você limpar os dados do navegador ou trocar de aparelho, as informações não serão transferidas — use a exportação em CSV para guardar uma cópia." } },
+      { "@type": "Question", "name": "O que entra em Necessidades e o que entra em Desejos na regra 50/30/20?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Necessidades são gastos essenciais e difíceis de cortar no curto prazo: moradia, contas básicas, mercado, transporte para o trabalho, saúde e parcelas mínimas de dívidas. Desejos são escolhas de estilo de vida: delivery, restaurantes, viagens, streaming, compras por impulso e hobbies." } },
+      { "@type": "Question", "name": "E se as minhas necessidades passarem de 50% da renda?",
+        "acceptedAnswer": { "@type": "Answer", "text": "É comum em rendas mais baixas. Use a regra como direção: comece guardando 5% ou 10%, reduza desejos temporariamente e procure aumentar a renda. O importante é guardar algum valor todo mês e evoluir aos poucos." } },
+      { "@type": "Question", "name": "Quanto devo ter na reserva de emergência?",
+        "acceptedAnswer": { "@type": "Answer", "text": "A referência é de 3 a 6 meses do seu custo de vida. Quem tem emprego muito estável pode mirar 3 meses; trabalhadores CLT, 6 meses; autônomos e quem tem renda variável, de 6 a 12 meses." } },
+      { "@type": "Question", "name": "Onde guardar a reserva de emergência?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Em aplicações seguras e com liquidez diária, como Tesouro Selic, CDB com liquidez diária que pague pelo menos 100% do CDI ou contas remuneradas de bancos sólidos. Evite ações, fundos de longo prazo e aplicações com carência." } },
+      { "@type": "Question", "name": "Poupança, CDB ou Tesouro Selic: qual rende mais?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Com a Selic acima de 8,5% ao ano, a poupança rende 0,5% ao mês mais a TR, enquanto CDBs de 100% do CDI e o Tesouro Selic acompanham a taxa básica. Mesmo descontando o Imposto de Renda, CDB 100% CDI e Tesouro Selic costumam render mais que a poupança, especialmente em prazos acima de 1 ano." } },
+      { "@type": "Question", "name": "Como funciona o Imposto de Renda sobre CDB e Tesouro Selic?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Incide apenas sobre o rendimento, com tabela regressiva: 22,5% até 180 dias, 20% de 181 a 360 dias, 17,5% de 361 a 720 dias e 15% acima de 720 dias. Há IOF nos resgates feitos em menos de 30 dias. A poupança é isenta para pessoa física." } },
+      { "@type": "Question", "name": "O FGC protege meu dinheiro no CDB?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Sim. O Fundo Garantidor de Créditos cobre até R$ 250 mil por CPF e por instituição financeira, com teto global de R$ 1 milhão a cada 4 anos. O Tesouro Direto é garantido pelo Governo Federal." } },
+      { "@type": "Question", "name": "O simulador garante esses rendimentos?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Não. O simulador faz projeções educativas considerando taxas constantes durante todo o período. Na prática, Selic, CDI e TR mudam ao longo do tempo. Use os resultados como referência, não como promessa de rentabilidade." } }
+    ]
+  }
+  </script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="./" aria-label="Bolso em Dia — página inicial">
+        <svg class="brand-logo" viewBox="0 0 64 64" width="34" height="34" aria-hidden="true"><rect width="64" height="64" rx="16" fill="#10b981"/><path d="M15 43l11-11 8 8 15-17" stroke="#fff" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>Bolso<strong>em Dia</strong></span>
+      </a>
+      <nav class="main-nav" aria-label="Navegação principal">
+        <a href="#painel">Gastos</a>
+        <a href="#reserva">Reserva</a>
+        <a href="#simulador">Simulador</a>
+        <a href="#guia">Guia</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">Planilha financeira grátis • sem cadastro</p>
+        <h1>Planilha de Gastos Online &amp; Simulador de Investimentos</h1>
+        <p class="hero-sub">Descubra para onde o seu dinheiro está indo, aplique a <strong>regra 50/30/20</strong>, monte sua <strong>reserva de emergência</strong> e veja quanto seu dinheiro renderia na Poupança, no CDB e no Tesouro Selic.</p>
+        <ul class="hero-badges" aria-label="Destaques">
+          <li><span aria-hidden="true">🔒</span> Dados salvos só no seu aparelho</li>
+          <li><span aria-hidden="true">⚡</span> Cálculo instantâneo</li>
+          <li><span aria-hidden="true">📄</span> Exporta PDF e Excel</li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="container dashboard">
+      <!-- ============ KPIs ============ -->
+      <section class="kpis" aria-label="Resumo do mês">
+        <article class="kpi">
+          <p class="kpi-label">Renda líquida</p>
+          <p class="kpi-value" id="kpi-renda">R$ 0,00</p>
+          <p class="kpi-sub">por mês</p>
+        </article>
+        <article class="kpi">
+          <p class="kpi-label">Total de gastos</p>
+          <p class="kpi-value" id="kpi-gastos">R$ 0,00</p>
+          <p class="kpi-sub" id="kpi-gastos-sub">0 despesas</p>
+        </article>
+        <article class="kpi kpi-saldo" id="kpi-saldo-card">
+          <p class="kpi-label">Saldo do mês</p>
+          <p class="kpi-value" id="kpi-saldo">R$ 0,00</p>
+          <p class="kpi-sub" id="kpi-saldo-sub">após gastos e investimentos</p>
+        </article>
+        <article class="kpi">
+          <p class="kpi-label">Vai para o futuro</p>
+          <p class="kpi-value" id="kpi-poupanca">0,0%</p>
+          <p class="kpi-sub" id="kpi-poupanca-sub">meta: 20% da renda</p>
+        </article>
+      </section>
+
+      <!-- ============ AÇÕES ============ -->
+      <section class="toolbar" aria-label="Ações">
+        <p class="save-status" id="save-status" role="status" aria-live="polite"><span class="dot" aria-hidden="true"></span> Salvamento automático ativado</p>
+        <div class="toolbar-actions">
+          <button type="button" class="btn btn-ghost" id="btn-exemplo">✨ Ver exemplo</button>
+          <button type="button" class="btn btn-secondary" id="btn-print">🖨️ Imprimir / PDF</button>
+          <button type="button" class="btn btn-secondary" id="btn-csv">📊 Exportar CSV / Excel</button>
+          <button type="button" class="btn btn-danger-ghost" id="btn-reset">🗑️ Limpar dados</button>
+        </div>
+      </section>
+
+      <!-- ============ MÓDULO 1: GASTOS ============ -->
+      <section id="painel" class="module" aria-labelledby="painel-title">
+        <header class="module-head">
+          <span class="module-step">1</span>
+          <div>
+            <h2 id="painel-title">Controle de Gastos &amp; Orçamento</h2>
+            <p>Informe sua renda e lance suas despesas do mês. O diagnóstico é atualizado na hora.</p>
+          </div>
+        </header>
+
+        <div class="grid grid-2">
+          <div class="stack">
+            <form class="card" id="form-renda" novalidate>
+              <h3 class="card-title">Sua renda mensal líquida</h3>
+              <div class="field">
+                <label for="renda">Renda líquida (o que cai na conta)</label>
+                <div class="input-affix">
+                  <span aria-hidden="true">R$</span>
+                  <input id="renda" name="renda" type="text" inputmode="decimal" autocomplete="off" placeholder="0,00" enterkeyhint="done" data-bind="renda" data-type="money" aria-describedby="renda-hint">
+                </div>
+                <p class="hint" id="renda-hint">Salário + extras fixos, já descontados INSS e Imposto de Renda.</p>
+              </div>
+            </form>
+
+            <form class="card" id="form-despesa" novalidate>
+              <h3 class="card-title">Adicionar despesa</h3>
+              <div class="field">
+                <label for="desc">Descrição <span class="req" aria-hidden="true">*</span></label>
+                <input id="desc" name="descricao" type="text" maxlength="60" required autocomplete="off" placeholder="Ex.: Aluguel, mercado, Uber…" enterkeyhint="next">
+              </div>
+              <div class="field-row">
+                <div class="field">
+                  <label for="valor">Valor mensal <span class="req" aria-hidden="true">*</span></label>
+                  <div class="input-affix">
+                    <span aria-hidden="true">R$</span>
+                    <input id="valor" name="valor" type="text" inputmode="decimal" required autocomplete="off" placeholder="0,00" enterkeyhint="done">
+                  </div>
+                </div>
+                <div class="field">
+                  <label for="categoria">Categoria</label>
+                  <select id="categoria" name="categoria">
+                    <option value="moradia">🏠 Moradia</option>
+                    <option value="alimentacao">🛒 Alimentação</option>
+                    <option value="transporte">🚗 Transporte</option>
+                    <option value="lazer">🎉 Lazer</option>
+                    <option value="saude">💊 Saúde</option>
+                    <option value="dividas">💳 Dívidas/Outros</option>
+                    <option value="investimentos">📈 Investimentos / Guardar</option>
+                  </select>
+                </div>
+              </div>
+              <fieldset class="field segmented" id="tipo-fieldset">
+                <legend>Classificação na regra 50/30/20</legend>
+                <label><input type="radio" name="tipo" value="auto" checked><span>Automática</span></label>
+                <label><input type="radio" name="tipo" value="need"><span>Necessidade</span></label>
+                <label><input type="radio" name="tipo" value="want"><span>Desejo</span></label>
+              </fieldset>
+              <p class="hint" id="tipo-hint">Automática: Lazer = Desejo; Investimentos = Futuro; demais = Necessidade. Ex.: marque delivery como “Desejo”.</p>
+              <p class="form-error" id="despesa-erro" role="alert" aria-live="assertive"></p>
+              <button type="submit" class="btn btn-primary btn-block">+ Adicionar despesa</button>
+            </form>
+          </div>
+
+          <div class="card card-list">
+            <div class="card-title-row">
+              <h3 class="card-title">Suas despesas <span class="count" id="lista-count">0</span></h3>
+              <p class="list-total">Total: <strong id="lista-total">R$ 0,00</strong></p>
+            </div>
+            <ul class="expense-list" id="lista-despesas" aria-live="polite"></ul>
+            <div class="empty" id="lista-vazia">
+              <p class="empty-icon" aria-hidden="true">🧾</p>
+              <p><strong>Nenhuma despesa ainda.</strong></p>
+              <p>Comece pelos gastos fixos (aluguel, contas, mercado) ou toque em <em>“Ver exemplo”</em>.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-2">
+          <article class="card">
+            <h3 class="card-title">Para onde vai o seu dinheiro</h3>
+            <div class="donut-wrap" id="donut-wrap">
+              <div class="donut-box">
+                <svg id="donut" viewBox="0 0 42 42" role="img" aria-labelledby="donut-desc">
+                  <title id="donut-desc">Gráfico de rosca com a distribuição dos gastos por categoria</title>
+                  <circle class="donut-track" cx="21" cy="21" r="15.9155" fill="none" stroke-width="5.2"></circle>
+                  <g id="donut-segments"></g>
+                </svg>
+                <div class="donut-center" aria-hidden="true">
+                  <span id="donut-center-label">Total</span>
+                  <strong id="donut-center-value">R$ 0</strong>
+                  <span id="donut-center-pct"></span>
+                </div>
+              </div>
+              <ul class="legend" id="legenda"></ul>
+            </div>
+            <p class="empty-inline" id="donut-empty">Adicione despesas para ver o gráfico.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-title-row">
+              <h3 class="card-title">Diagnóstico 50/30/20</h3>
+              <span class="badge" id="diag-score">Aguardando dados</span>
+            </div>
+            <div id="diag-rows" class="diag-rows"></div>
+            <ul id="diag-alertas" class="alerts" aria-live="polite"></ul>
+          </article>
+        </div>
+      </section>
+
+      <aside class="ad-slot" aria-label="Publicidade">
+        <span>Publicidade</span>
+        <!-- <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-0000000000000000" data-ad-slot="0000000000" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script> -->
+      </aside>
+
+      <!-- ============ MÓDULO 2: RESERVA ============ -->
+      <section id="reserva" class="module" aria-labelledby="reserva-title">
+        <header class="module-head">
+          <span class="module-step">2</span>
+          <div>
+            <h2 id="reserva-title">Guardar Dinheiro &amp; Reserva de Emergência</h2>
+            <p>Descubra o tamanho ideal do seu colchão financeiro e acompanhe sua meta.</p>
+          </div>
+        </header>
+
+        <div class="grid grid-2">
+          <form class="card" id="form-reserva" novalidate>
+            <h3 class="card-title">Calculadora de reserva</h3>
+            <fieldset class="field choice-list">
+              <legend>Qual custo de vida considerar?</legend>
+              <label class="choice"><input type="radio" name="reserva-base" value="need" checked><span><strong>Só necessidades</strong><small id="base-need-val">R$ 0,00/mês</small></span></label>
+              <label class="choice"><input type="radio" name="reserva-base" value="all"><span><strong>Todos os gastos</strong><small id="base-all-val">R$ 0,00/mês</small></span></label>
+              <label class="choice"><input type="radio" name="reserva-base" value="custom"><span><strong>Valor personalizado</strong><small>digite abaixo</small></span></label>
+            </fieldset>
+            <div class="field" id="reserva-custom-wrap" hidden>
+              <label for="reserva-custom">Custo de vida mensal</label>
+              <div class="input-affix"><span aria-hidden="true">R$</span><input id="reserva-custom" type="text" inputmode="decimal" autocomplete="off" placeholder="0,00" data-bind="reserva.custom" data-type="money"></div>
+            </div>
+            <fieldset class="field segmented segmented-3">
+              <legend>Seu perfil de renda</legend>
+              <label><input type="radio" name="reserva-meses" value="3"><span>3 meses<small>Muito estável</small></span></label>
+              <label><input type="radio" name="reserva-meses" value="6" checked><span>6 meses<small>CLT</small></span></label>
+              <label><input type="radio" name="reserva-meses" value="12"><span>12 meses<small>Autônomo/PJ</small></span></label>
+            </fieldset>
+            <div class="field-row">
+              <div class="field">
+                <label for="reserva-guardado">Quanto já tenho guardado</label>
+                <div class="input-affix"><span aria-hidden="true">R$</span><input id="reserva-guardado" type="text" inputmode="decimal" autocomplete="off" placeholder="0,00" data-bind="reserva.guardado" data-type="money"></div>
+              </div>
+              <div class="field">
+                <label for="reserva-aporte">Consigo guardar por mês</label>
+                <div class="input-affix"><span aria-hidden="true">R$</span><input id="reserva-aporte" type="text" inputmode="decimal" autocomplete="off" placeholder="0,00" data-bind="reserva.aporte" data-type="money"></div>
+              </div>
+            </div>
+            <button type="button" class="link-btn" id="btn-reserva-sobra">Usar a sobra do meu orçamento</button>
+          </form>
+
+          <article class="card card-highlight">
+            <p class="highlight-label">Sua reserva de emergência ideal</p>
+            <p class="highlight-value" id="reserva-meta">R$ 0,00</p>
+            <p class="highlight-sub" id="reserva-range">Informe seus gastos para calcular.</p>
+            <div class="progress-block">
+              <div class="progress-head"><span>Progresso</span><strong id="reserva-pct">0%</strong></div>
+              <div class="progress" id="reserva-progress-wrap" role="progressbar" aria-label="Progresso da reserva de emergência" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span id="reserva-progress"></span></div>
+            </div>
+            <dl class="stats">
+              <div><dt>Custo de vida usado</dt><dd id="reserva-custo">R$ 0,00</dd></div>
+              <div><dt>Falta guardar</dt><dd id="reserva-falta">R$ 0,00</dd></div>
+              <div><dt>Tempo estimado</dt><dd id="reserva-tempo">—</dd></div>
+            </dl>
+            <p class="note">Guarde a reserva em aplicações seguras e com liquidez diária (Tesouro Selic ou CDB 100% CDI com liquidez diária).</p>
+          </article>
+        </div>
+
+        <form class="card" id="form-meta" novalidate>
+          <div class="card-title-row">
+            <h3 class="card-title">🎯 Meta financeira personalizada</h3>
+            <span class="badge badge-soft" id="meta-badge">Defina uma meta</span>
+          </div>
+          <div class="grid grid-4">
+            <div class="field">
+              <label for="meta-nome">Objetivo</label>
+              <input id="meta-nome" type="text" maxlength="40" autocomplete="off" placeholder="Ex.: Viagem, carro, curso" data-bind="meta.nome" data-type="text">
+            </div>
+            <div class="field">
+              <label for="meta-valor">Valor da meta</label>
+              <div class="input-affix"><span aria-hidden="true">R$</span><input id="meta-valor" type="text" inputmode="decimal" autocomplete="off" placeholder="0,00" data-bind="meta.valor" data-type="money"></div>
+            </div>
+            <div class="field">
+              <label for="meta-guardado">Já guardei</label>
+              <div class="input-affix"><span aria-hidden="true">R$</span><input id="meta-guardado" type="text" inputmode="decimal" autocomplete="off" placeholder="0,00" data-bind="meta.guardado" data-type="money"></div>
+            </div>
+            <div class="field">
+              <label for="meta-prazo">Prazo (meses)</label>
+              <input id="meta-prazo" type="number" inputmode="numeric" min="1" max="600" step="1" placeholder="12" data-bind="meta.prazo" data-type="int">
+            </div>
+          </div>
+          <div class="progress-block">
+            <div class="progress-head"><span id="meta-titulo">Progresso da meta</span><strong id="meta-pct">0%</strong></div>
+            <div class="progress progress-navy" id="meta-progress-wrap" role="progressbar" aria-label="Progresso da meta financeira" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span id="meta-progress"></span></div>
+          </div>
+          <p class="meta-result" id="meta-resultado">Preencha o valor da meta para ver quanto guardar por mês.</p>
+        </form>
+      </section>
+
+      <!-- ============ MÓDULO 3: SIMULADOR ============ -->
+      <section id="simulador" class="module" aria-labelledby="sim-title">
+        <header class="module-head">
+          <span class="module-step">3</span>
+          <div>
+            <h2 id="sim-title">Simulador de Investimentos para Iniciantes</h2>
+            <p>Poupança vs CDB 100% CDI vs Tesouro Selic — com juros compostos e Imposto de Renda.</p>
+          </div>
+        </header>
+
+        <div class="grid grid-sim">
+          <form class="card" id="form-sim" novalidate>
+            <h3 class="card-title">Quanto você vai investir?</h3>
+            <div class="field">
+              <label for="sim-aporte">Aporte mensal</label>
+              <div class="input-affix"><span aria-hidden="true">R$</span><input id="sim-aporte" type="text" inputmode="decimal" autocomplete="off" placeholder="0,00" data-bind="sim.aporte" data-type="money"></div>
+              <button type="button" class="link-btn" id="btn-sim-sobra">Usar a sobra do meu orçamento</button>
+            </div>
+            <div class="field">
+              <label for="sim-inicial">Valor inicial (opcional)</label>
+              <div class="input-affix"><span aria-hidden="true">R$</span><input id="sim-inicial" type="text" inputmode="decimal" autocomplete="off" placeholder="0,00" data-bind="sim.inicial" data-type="money"></div>
+            </div>
+            <fieldset class="field chips">
+              <legend>Prazo</legend>
+              <label><input type="radio" name="sim-prazo" value="6"><span>6 meses</span></label>
+              <label><input type="radio" name="sim-prazo" value="12" checked><span>1 ano</span></label>
+              <label><input type="radio" name="sim-prazo" value="36"><span>3 anos</span></label>
+              <label><input type="radio" name="sim-prazo" value="60"><span>5 anos</span></label>
+              <label><input type="radio" name="sim-prazo" value="120"><span>10 anos</span></label>
+              <label><input type="radio" name="sim-prazo" value="custom"><span>Outro</span></label>
+            </fieldset>
+            <div class="field" id="sim-prazo-custom-wrap" hidden>
+              <label for="sim-prazo-custom">Prazo personalizado (meses)</label>
+              <input id="sim-prazo-custom" type="number" inputmode="numeric" min="1" max="600" step="1" placeholder="24">
+            </div>
+            <details class="rates">
+              <summary>Ajustar taxas (Selic, CDI, TR)</summary>
+              <div class="grid grid-3 rates-grid">
+                <div class="field">
+                  <label for="sim-selic">Selic (% a.a.)</label>
+                  <input id="sim-selic" type="text" inputmode="decimal" autocomplete="off" data-bind="sim.selic" data-type="percent">
+                </div>
+                <div class="field">
+                  <label for="sim-cdi">CDI (% a.a.)</label>
+                  <input id="sim-cdi" type="text" inputmode="decimal" autocomplete="off" data-bind="sim.cdi" data-type="percent">
+                </div>
+                <div class="field">
+                  <label for="sim-tr">TR (% a.m.)</label>
+                  <input id="sim-tr" type="text" inputmode="decimal" autocomplete="off" data-bind="sim.tr" data-type="percent">
+                </div>
+              </div>
+              <p class="hint">Taxas de referência editáveis. Confira os valores atuais no site do Banco Central antes de decidir.</p>
+            </details>
+          </form>
+
+          <div class="stack">
+            <article class="card sim-headline-card">
+              <p class="sim-headline" id="sim-resumo">Defina um aporte para simular.</p>
+              <div class="sim-cards" id="sim-cards"></div>
+            </article>
+          </div>
+        </div>
+
+        <article class="card">
+          <div class="card-title-row">
+            <h3 class="card-title">Evolução do patrimônio (valor líquido)</h3>
+            <ul class="chart-legend" id="sim-legend"></ul>
+          </div>
+          <div class="chart-wrap" id="sim-chart-wrap">
+            <svg id="sim-chart" role="img" aria-label="Gráfico de linhas comparando a evolução do valor líquido na Poupança, CDB e Tesouro Selic"></svg>
+            <div class="chart-tooltip" id="sim-tooltip" hidden></div>
+          </div>
+          <div class="sim-bars" id="sim-bars"></div>
+          <p class="note" id="sim-rates"></p>
+        </article>
+      </section>
+
+      <aside class="ad-slot" aria-label="Publicidade">
+        <span>Publicidade</span>
+        <!-- <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-0000000000000000" data-ad-slot="0000000000" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script> -->
+      </aside>
+    </div>
+
+    <!-- ============ CONTEÚDO EDITORIAL ============ -->
+    <div class="container editorial-wrap">
+      <article class="editorial" id="guia">
+        <p class="eyebrow">Guia de finanças pessoais</p>
+        <h2>Como organizar o orçamento pessoal com a regra 50/30/20</h2>
+        <p>A <strong>regra 50/30/20</strong> é um dos métodos mais simples e eficientes para quem quer começar um <strong>controle financeiro pessoal</strong> sem complicação. Popularizada pela senadora norte-americana Elizabeth Warren no livro <em>All Your Worth</em>, ela divide a renda líquida mensal em três grandes blocos, o que torna muito mais fácil enxergar se o seu padrão de vida cabe no seu bolso.</p>
+        <div class="rule-cards">
+          <div class="rule rule-need"><strong>50%</strong><span>Necessidades</span><p>Moradia, contas de consumo, mercado, transporte, saúde, educação e parcelas mínimas de dívidas.</p></div>
+          <div class="rule rule-want"><strong>30%</strong><span>Desejos</span><p>Restaurantes, delivery, viagens, streaming, roupas além do básico, hobbies e presentes.</p></div>
+          <div class="rule rule-future"><strong>20%</strong><span>Futuro</span><p>Reserva de emergência, investimentos, aposentadoria e quitação antecipada de dívidas.</p></div>
+        </div>
+        <h3>Passo a passo para aplicar a regra no seu mês</h3>
+        <ol>
+          <li><strong>Descubra sua renda líquida.</strong> Considere apenas o que efetivamente cai na conta, já descontados INSS, Imposto de Renda e outros descontos em folha. Se a sua renda varia, use a média dos últimos 6 meses ou, para ser conservador, o valor do mês mais fraco.</li>
+          <li><strong>Liste todas as despesas.</strong> Abra o extrato bancário e a fatura do cartão dos últimos 2 ou 3 meses. Gastos pequenos e frequentes — cafés, aplicativos, taxas — costumam ser os grandes vilões invisíveis do orçamento. Uma <strong>planilha de gastos online</strong> como a desta página ajuda a não esquecer nada.</li>
+          <li><strong>Classifique cada gasto.</strong> Pergunte-se: “se eu perder minha renda amanhã, continuaria pagando isso?”. Se sim, é necessidade. Se não, é desejo. O mesmo item pode mudar de bloco: o mercado é necessidade; o delivery de sexta-feira é desejo.</li>
+          <li><strong>Compare com o ideal.</strong> O diagnóstico automático mostra quanto cada bloco representa da sua renda e onde está o excesso. Não se assuste se os números estiverem longe do ideal no começo — o objetivo é ter clareza.</li>
+          <li><strong>Pague-se primeiro.</strong> Assim que o salário cair, transfira os 20% do futuro para uma conta de investimentos. Viver com o que sobra depois de guardar é muito mais eficaz do que tentar guardar o que sobra depois de gastar.</li>
+        </ol>
+        <h3>E quando a conta não fecha?</h3>
+        <p>Em muitas famílias brasileiras, as necessidades ultrapassam os 50% — principalmente por causa do aluguel e da alimentação. Nesse caso, trate a regra como uma bússola e não como uma lei. Algumas alternativas práticas: adotar temporariamente uma divisão 60/20/20 ou 70/20/10, renegociar contratos (aluguel, internet, plano de celular, seguros), trocar dívidas caras por crédito mais barato (como o consignado) e buscar fontes de renda extra. O importante é criar o hábito de guardar <em>algum</em> valor todos os meses, nem que seja 5%.</p>
+
+        <aside class="ad-slot ad-inline" aria-label="Publicidade"><span>Publicidade</span></aside>
+
+        <h2>O que é e como construir a sua Reserva de Emergência</h2>
+        <p>A <strong>reserva de emergência</strong> é um dinheiro guardado exclusivamente para imprevistos: perda de emprego, problemas de saúde, conserto do carro, uma geladeira que quebra. Ela é o primeiro passo de qualquer planejamento financeiro sólido, porque evita que um imprevisto vire dívida no cartão de crédito ou no cheque especial — modalidades com alguns dos juros mais altos do mundo.</p>
+        <h3>Qual deve ser o tamanho da reserva?</h3>
+        <p>A recomendação clássica é ter entre <strong>3 e 6 meses do seu custo de vida</strong> guardados. O número exato depende da estabilidade da sua renda:</p>
+        <ul>
+          <li><strong>3 meses:</strong> servidores públicos e profissionais com alta estabilidade no emprego.</li>
+          <li><strong>6 meses:</strong> trabalhadores CLT, que podem ficar alguns meses procurando uma nova vaga.</li>
+          <li><strong>6 a 12 meses:</strong> autônomos, empreendedores, PJ e quem tem renda variável ou comissionada.</li>
+        </ul>
+        <p>Perceba que a base de cálculo é o <strong>custo de vida</strong>, não o salário. Se você ganha R$ 5.000 e gasta R$ 3.000 com o essencial, uma reserva de 6 meses seria de R$ 18.000. Use a calculadora acima para descobrir o seu número.</p>
+        <h3>Como montar a reserva do zero</h3>
+        <ol>
+          <li><strong>Defina a meta</strong> e divida em etapas menores: primeiro 1 mês de custo de vida, depois 3, depois 6. Cada etapa concluída gera motivação.</li>
+          <li><strong>Automatize:</strong> programe uma transferência mensal no dia do pagamento.</li>
+          <li><strong>Use dinheiro extra:</strong> 13º salário, restituição do IR, férias e bônus aceleram muito o processo.</li>
+          <li><strong>Escolha o lugar certo:</strong> a reserva precisa de <em>segurança</em> e <em>liquidez diária</em> (poder sacar a qualquer momento sem perder dinheiro). Rentabilidade vem em terceiro lugar.</li>
+          <li><strong>Reponha quando usar:</strong> se precisar da reserva, volte a recompô-la antes de qualquer outro objetivo.</li>
+        </ol>
+
+        <h2>Onde deixar o dinheiro rendendo: guia rápido de Renda Fixa para iniciantes</h2>
+        <p>Se você quer aprender <strong>como guardar dinheiro e investir</strong> com segurança, a renda fixa é o ponto de partida natural. Nela, as regras de remuneração são conhecidas no momento da aplicação. Conheça as três opções comparadas no nosso <strong>simulador de investimentos</strong>:</p>
+        <div class="table-scroll">
+          <table class="compare-table">
+            <caption>Comparativo das principais opções de renda fixa para iniciantes</caption>
+            <thead>
+              <tr><th scope="col">Característica</th><th scope="col">Poupança</th><th scope="col">CDB 100% CDI</th><th scope="col">Tesouro Selic</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">Rendimento</th><td>0,5% a.m. + TR (com Selic &gt; 8,5% a.a.)</td><td>Acompanha o CDI</td><td>Acompanha a Selic</td></tr>
+              <tr><th scope="row">Imposto de Renda</th><td>Isenta</td><td>Tabela regressiva (22,5% a 15%)</td><td>Tabela regressiva (22,5% a 15%)</td></tr>
+              <tr><th scope="row">Garantia</th><td>FGC até R$ 250 mil</td><td>FGC até R$ 250 mil</td><td>Tesouro Nacional</td></tr>
+              <tr><th scope="row">Liquidez</th><td>Diária (rende no aniversário)</td><td>Depende do título (prefira diária)</td><td>Diária (D+0 em dias úteis)</td></tr>
+              <tr><th scope="row">Custos</th><td>Nenhum</td><td>Geralmente nenhum</td><td>Taxa B3 de 0,20% a.a. acima de R$ 10 mil</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <h3>Poupança</h3>
+        <p>É a aplicação mais conhecida do Brasil e é isenta de IR, mas costuma ser a que menos rende. Quando a Selic está acima de 8,5% ao ano, ela paga 0,5% ao mês mais a Taxa Referencial (TR); abaixo disso, paga 70% da Selic mais TR. Outro detalhe: o rendimento só acontece no “aniversário” do depósito, então sacar um dia antes faz você perder o mês inteiro de juros.</p>
+        <h3>CDB (Certificado de Depósito Bancário)</h3>
+        <p>Ao investir em um CDB, você empresta dinheiro ao banco e recebe juros em troca. Os mais indicados para iniciantes são os <strong>pós-fixados que pagam 100% do CDI ou mais</strong> e possuem <strong>liquidez diária</strong>. Contam com a proteção do Fundo Garantidor de Créditos (FGC) até R$ 250 mil por CPF e por instituição.</p>
+        <h3>Tesouro Selic</h3>
+        <p>É um título público federal considerado o investimento mais seguro do país. Acompanha a taxa Selic, tem liquidez diária e pode ser comprado a partir de pouco mais de R$ 100 por meio de qualquer corretora ou banco. Por isso é a escolha favorita de muitos planejadores financeiros para a reserva de emergência.</p>
+        <h3>Juros compostos: o segredo é o tempo</h3>
+        <p>Nos juros compostos, os rendimentos de cada mês passam a render também nos meses seguintes — os famosos “juros sobre juros”. Por isso, começar cedo e manter a constância dos aportes vale mais do que aplicar valores altos esporadicamente. Teste no simulador: compare o resultado de 1 ano com o de 10 anos e veja como a curva de crescimento acelera com o passar do tempo.</p>
+        <p class="disclaimer"><strong>Aviso importante:</strong> o conteúdo desta página tem caráter exclusivamente educativo e não constitui recomendação de investimento. Rentabilidade passada não é garantia de rentabilidade futura. Antes de investir, avalie seus objetivos e, se necessário, procure um profissional certificado.</p>
+      </article>
+
+      <section class="faq" id="faq" aria-labelledby="faq-title">
+        <h2 id="faq-title">Perguntas frequentes sobre finanças pessoais</h2>
+        <details>
+          <summary>A planilha de gastos online é gratuita e precisa de cadastro?</summary>
+          <p>É 100% gratuita e não exige cadastro, e-mail ou login. Basta abrir a página e começar a preencher.</p>
+        </details>
+        <details>
+          <summary>Onde ficam salvos os meus dados financeiros?</summary>
+          <p>Somente no seu navegador, por meio do localStorage. Nenhum valor é enviado para servidores. Se você limpar os dados do navegador ou trocar de aparelho, as informações não serão transferidas — use a exportação em CSV para guardar uma cópia.</p>
+        </details>
+        <details>
+          <summary>O que entra em Necessidades e o que entra em Desejos na regra 50/30/20?</summary>
+          <p>Necessidades são gastos essenciais e difíceis de cortar no curto prazo: moradia, contas básicas, mercado, transporte para o trabalho, saúde e parcelas mínimas de dívidas. Desejos são escolhas de estilo de vida: delivery, restaurantes, viagens, streaming, compras por impulso e hobbies.</p>
+        </details>
+        <details>
+          <summary>E se as minhas necessidades passarem de 50% da renda?</summary>
+          <p>É comum em rendas mais baixas. Use a regra como direção: comece guardando 5% ou 10%, reduza desejos temporariamente e procure aumentar a renda. O importante é guardar algum valor todo mês e evoluir aos poucos.</p>
+        </details>
+        <details>
+          <summary>Quanto devo ter na reserva de emergência?</summary>
+          <p>A referência é de 3 a 6 meses do seu custo de vida. Quem tem emprego muito estável pode mirar 3 meses; trabalhadores CLT, 6 meses; autônomos e quem tem renda variável, de 6 a 12 meses.</p>
+        </details>
+        <details>
+          <summary>Onde guardar a reserva de emergência?</summary>
+          <p>Em aplicações seguras e com liquidez diária, como Tesouro Selic, CDB com liquidez diária que pague pelo menos 100% do CDI ou contas remuneradas de bancos sólidos. Evite ações, fundos de longo prazo e aplicações com carência.</p>
+        </details>
+        <details>
+          <summary>Poupança, CDB ou Tesouro Selic: qual rende mais?</summary>
+          <p>Com a Selic acima de 8,5% ao ano, a poupança rende 0,5% ao mês mais a TR, enquanto CDBs de 100% do CDI e o Tesouro Selic acompanham a taxa básica. Mesmo descontando o Imposto de Renda, CDB 100% CDI e Tesouro Selic costumam render mais que a poupança, especialmente em prazos acima de 1 ano.</p>
+        </details>
+        <details>
+          <summary>Como funciona o Imposto de Renda sobre CDB e Tesouro Selic?</summary>
+          <p>Incide apenas sobre o rendimento, com tabela regressiva: 22,5% até 180 dias, 20% de 181 a 360 dias, 17,5% de 361 a 720 dias e 15% acima de 720 dias. Há IOF nos resgates feitos em menos de 30 dias. A poupança é isenta para pessoa física.</p>
+        </details>
+        <details>
+          <summary>O FGC protege meu dinheiro no CDB?</summary>
+          <p>Sim. O Fundo Garantidor de Créditos cobre até R$ 250 mil por CPF e por instituição financeira, com teto global de R$ 1 milhão a cada 4 anos. O Tesouro Direto é garantido pelo Governo Federal.</p>
+        </details>
+        <details>
+          <summary>O simulador garante esses rendimentos?</summary>
+          <p>Não. O simulador faz projeções educativas considerando taxas constantes durante todo o período. Na prática, Selic, CDI e TR mudam ao longo do tempo. Use os resultados como referência, não como promessa de rentabilidade.</p>
+        </details>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <a class="brand brand-footer" href="./"><span>Bolso<strong>em Dia</strong></span></a>
+        <p>Planilha de gastos online, controle financeiro pessoal e simulador de investimentos gratuitos. Ferramenta educativa — não constitui recomendação de investimento.</p>
+      </div>
+      <nav aria-label="Links institucionais" class="footer-links">
+        <a href="privacidade.html">Política de Privacidade</a>
+        <a href="termos.html">Termos de Uso</a>
+        <a href="#faq">Perguntas frequentes</a>
+        <a href="mailto:contato@seudominio.com.br">Contato</a>
+      </nav>
+    </div>
+    <p class="container copyright">© <span id="ano">2026</span> Bolso em Dia. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Relatório para impressão / PDF (preenchido via JavaScript) -->
+  <section id="relatorio" aria-hidden="true"></section>
+
+  <dialog id="dialog-confirm" aria-labelledby="dialog-title" aria-describedby="dialog-msg">
+    <form method="dialog">
+      <h2 id="dialog-title">Confirmar</h2>
+      <p id="dialog-msg"></p>
+      <div class="dialog-actions">
+        <button type="submit" value="cancel" class="btn btn-secondary" id="dialog-cancel">Cancelar</button>
+        <button type="submit" value="ok" class="btn btn-danger" id="dialog-ok">Confirmar</button>
+      </div>
+    </form>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

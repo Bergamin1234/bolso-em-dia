@@ -61,6 +61,20 @@
   });
 
   /* ---------------------------------------------------------
+     Rastreamento de Conversões (Google Ads / GA4 / GTM)
+     --------------------------------------------------------- */
+  function trackEvent(eventName, params = {}) {
+    try {
+      if (typeof window.gtag === 'function') {
+        window.gtag('event', eventName, params);
+      }
+      if (Array.isArray(window.dataLayer)) {
+        window.dataLayer.push({ event: eventName, ...params });
+      }
+    } catch (_) { /* silencioso */ }
+  }
+
+  /* ---------------------------------------------------------
      Formatação / parsing
      --------------------------------------------------------- */
   const brlFmt = new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' });
@@ -963,6 +977,7 @@
       err.textContent = '';
       renderAll();
       saveState();
+      trackEvent('add_expense', { categoria: categoria.value, valor: v });
       toast(`“${d}” adicionada: ${brl(v)}`);
       desc.focus();
     });
@@ -1022,6 +1037,7 @@
     hydrateInputs();
     renderAll();
     saveState();
+    trackEvent('load_sample');
     toast('Exemplo carregado — edite à vontade!');
     $('#painel').scrollIntoView({ block: 'start' });
   }
@@ -1113,6 +1129,7 @@
     a.click();
     a.remove();
     setTimeout(() => URL.revokeObjectURL(url), 1000);
+    trackEvent('export_csv', { count: state.despesas.length, renda: state.renda });
     toast('Arquivo CSV gerado — abre no Excel e Google Sheets');
   }
 
@@ -1170,6 +1187,7 @@
   }
 
   function printReport() {
+    trackEvent('generate_lead', { event_category: 'Relatorio_PDF', renda: state.renda });
     buildReport();
     window.print();
   }

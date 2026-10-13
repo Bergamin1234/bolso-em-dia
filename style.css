@@ -143,6 +143,14 @@ button, input, select, textarea { font: inherit; color: inherit; }
   letter-spacing: -0.02em;
   flex-shrink: 0;
 }
+.brand-logo {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  object-fit: contain;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgb(0 0 0 / .2);
+}
 .brand strong { color: var(--emerald-500); font-weight: 800; margin-left: 4px; }
 .main-nav {
   display: flex;
@@ -194,6 +202,31 @@ button, input, select, textarea { font: inherit; color: inherit; }
   font-size: 1.02rem;
 }
 .hero-sub strong { color: #fff; }
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 22px;
+}
+.btn-hero-primary {
+  background: var(--emerald-500);
+  color: #071427 !important;
+  font-weight: 700;
+  box-shadow: 0 4px 16px rgb(16 185 129 / .4);
+}
+.btn-hero-primary:hover {
+  background: var(--emerald-600);
+  color: #fff !important;
+}
+.btn-hero-secondary {
+  background: rgb(255 255 255 / .12);
+  color: #fff !important;
+  border: 1px solid rgb(255 255 255 / .25);
+}
+.btn-hero-secondary:hover {
+  background: rgb(255 255 255 / .22);
+  color: #fff !important;
+}
 .hero-badges {
   list-style: none;
   padding: 0;

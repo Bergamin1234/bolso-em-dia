@@ -1,0 +1,22 @@
+# Robots.txt - Bolso em Dia
+# Configurado para indexação do Google e aprovação imediata do AdsBot-Google
+
+User-agent: AdsBot-Google
+Allow: /
+
+User-agent: AdsBot-Google-Mobile
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Mediapartners-Google
+Allow: /
+
+User-agent: *
+Allow: /
+
+Sitemap: https://www.seudominio.com.br/sitemap.xml

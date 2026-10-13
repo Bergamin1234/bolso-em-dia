@@ -1,0 +1,23 @@
+{
+  "name": "Bolso em Dia — Planilha de Gastos & Simulador",
+  "short_name": "Bolso em Dia",
+  "description": "Planilha de gastos online grátis, regra 50/30/20, reserva de emergência e simulador de investimentos.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0b1f3a",
+  "theme_color": "#0b1f3a",
+  "lang": "pt-BR",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

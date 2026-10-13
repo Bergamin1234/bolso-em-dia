@@ -1,0 +1,19 @@
+{
+  "name": "bolso-em-dia",
+  "version": "1.0.0",
+  "description": "Planilha de Gastos Online e Simulador de Investimentos — Regra 50/30/20",
+  "main": "index.html",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node ../test-browser.js"
+  },
+  "keywords": [
+    "financas-pessoais",
+    "planilha-de-gastos",
+    "simulador-investimentos",
+    "regra-50-30-20",
+    "reserva-de-emergencia"
+  ],
+  "author": "Bolso em Dia",
+  "license": "MIT"
+}

@@ -20,15 +20,41 @@
   <meta property="og:title" content="Planilha de Gastos Online + Simulador de Investimentos (grátis)">
   <meta property="og:description" content="Descubra para onde vai o seu dinheiro, aplique a regra 50/30/20, monte sua reserva de emergência e simule quanto seu dinheiro rende. Sem cadastro.">
   <meta property="og:url" content="https://www.seudominio.com.br/">
+  <meta property="og:image" content="https://www.seudominio.com.br/logo.png">
+  <meta property="og:image:width" content="512">
+  <meta property="og:image:height" content="512">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Planilha de Gastos Online + Simulador de Investimentos">
   <meta name="twitter:description" content="Controle financeiro pessoal grátis: regra 50/30/20, reserva de emergência e Poupança x CDB x Tesouro Selic.">
+  <meta name="twitter:image" content="https://www.seudominio.com.br/logo.png">
 
+  <!-- Favicon e App Icons -->
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="alternate icon" href="favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="manifest.json">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
   <link rel="stylesheet" href="style.css">
+
+  <!-- =========================================================
+       Google Tag (gtag.js) para Google Ads e Google Analytics (GA4)
+       Para ativar no Google Ads:
+       1. Descomente as linhas abaixo.
+       2. Substitua "AW-XXXXXXXXXX" pelo seu ID de Conversão do Google Ads
+          (ou adicione também seu ID "G-XXXXXXXXXX" do GA4).
+       ========================================================= -->
+  <!--
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-XXXXXXXXXX');
+  </script>
+  -->
 
   <!-- Google AdSense: descomente e troque pelo seu ID de editor (ca-pub-...) após a aprovação -->
   <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0000000000000000" crossorigin="anonymous"></script> -->
@@ -82,7 +108,7 @@
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="./" aria-label="Bolso em Dia — página inicial">
-        <svg class="brand-logo" viewBox="0 0 64 64" width="34" height="34" aria-hidden="true"><rect width="64" height="64" rx="16" fill="#10b981"/><path d="M15 43l11-11 8 8 15-17" stroke="#fff" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <img class="brand-logo" src="favicon.svg" alt="Bolso em Dia" width="38" height="38">
         <span>Bolso<strong>em Dia</strong></span>
       </a>
       <nav class="main-nav" aria-label="Navegação principal">
@@ -102,6 +128,10 @@
         <p class="eyebrow">Planilha financeira grátis • sem cadastro</p>
         <h1>Planilha de Gastos Online &amp; Simulador de Investimentos</h1>
         <p class="hero-sub">Descubra para onde o seu dinheiro está indo, aplique a <strong>regra 50/30/20</strong>, monte sua <strong>reserva de emergência</strong> e veja quanto seu dinheiro renderia na Poupança, no CDB e no Tesouro Selic.</p>
+        <div class="hero-actions">
+          <a href="#painel" class="btn btn-hero-primary">🎯 Organizar Gastos Agora</a>
+          <a href="#simulador" class="btn btn-hero-secondary">📈 Simular Investimentos</a>
+        </div>
         <ul class="hero-badges" aria-label="Destaques">
           <li><span aria-hidden="true">🔒</span> Dados salvos só no seu aparelho</li>
           <li><span aria-hidden="true">⚡</span> Cálculo instantâneo</li>
